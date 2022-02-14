@@ -5,4 +5,4 @@ d <- ggboxplot(baseline, x = "LGMD", y = "Lying_FEV1", color = "LGMD", add = "ji
 e <- ggboxplot(baseline, x = "LGMD", y = "PCF", color = "LGMD", add = "jitter", legend = "none") + stat_compare_means( label.y = 150) + scale_x_discrete(name= NULL, labels=c("0" = "CAPN3", "1" = "ANO5", "2" = "DYSF", "3" = "FKRP", "4"= "SGC")) + scale_y_continuous(name="Baseline Peak Flow", limits=c(0, 150))
 g<- ggboxplot(baseline, x = "LGMD", y = "FVCsitFVCly", color = "LGMD", add = "jitter", legend = "none") + stat_compare_means( label.y = 35) + scale_x_discrete(name= NULL, labels=c("0" = "CAPN3", "1" = "ANO5", "2" = "DYSF", "3" = "FKRP", "4"= "SGC")) + scale_y_continuous(name="Difference FVC sitting vs lying", limits=c(0, 40))
 ggarrange(a, b, g, c, d, e, labels = c("A", "B", "C", "D", "E", "F"), ncol = 3, nrow = 2)
-# Esto es un comentario
+# Esto es un comentario mas largo
